@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Mariano Land Surveying & Realty Services - Professional geodetic engineering solutions in Pangasinan">
+  <meta name="theme-color" content="#0056d2">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  
+  <title>Mariano Land Surveying & Realty Services</title>
+  <link rel="icon" type="image/jpeg" href="image/NEWLOGO.png">
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="image/NEWLOGO.png">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="NEW.css">
+</head>
+
+<body>
+
+<!-- HEADER/NAV -->
+<header class="top-header">
+  <div class="nav-container">
+    <a href="#home" class="logo-link">
+      <img src="image/NEWLOGO.png" alt="Mariano Logo" class="header-logo" />
+      <div class="logo">
+        <div><span class="logo-main">MARIANO</span></div>
+        <small>Land Surveying & Realty Services</small>
+      </div>
+    </a>
+    
+    <nav class="nav-links" id="navMenu">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#process">Process</a>
+      <a href="#contact">Contact</a>
+      <a href="#" id="darkToggle" class="nav-dark-link">Dark Mode</a>
+    </nav>
+
+    <a href="tel:+639272104446" class="header-call">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67 A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6 l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7 A2 2 0 0 1 22 16.92z"></path>
+      </svg>
+      Call Now
+    </a>
+
+    <div class="burger" id="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</header>
+
+<!-- HERO SECTION -->
+<section id="home" class="hero-section">
+  <div class="hero-overlay"></div>
+  <div class="hero-content reveal">
+    <div class="hero-badge">
+      <span class="star">⭐</span>
+      <span class="badgee">5 Rating • Licensed Geodetic Engineer</span>
+    </div>
+    
+    <h1>MARIANO LAND SURVEYING & REALTY SERVICES</h1>
+    <p>Accurate. Licensed. Reliable. Serving Pangasinan with professional geodetic engineering solutions.</p>
+    
+    <div class="hero-buttons">
+      <a href="#" class="btn-primary" id="requestSurveyBtn">Request a Survey ➤</a>
+      <a href="tel:+639272104446" class="btn-outline">Call Now</a>
+    </div>
+    
+    <div class="hero-features">
+      <div class="feature" data-title="Licensed Professional" data-info="Licensed Geodetic Engineer ensuring legal and professional surveys.">✓ Licensed Professional</div>
+      <div class="feature" data-title="Accurate Results" data-info="High precision survey instruments guarantee correct boundaries.">✓ Accurate Results</div>
+      <div class="feature" data-title="Fast Processing" data-info="Fast processing of survey plans and documents.">✓ Fast Processing</div>
+    </div>
+
+    <div class="feature-popup" id="featurePopup">
+      <span class="close-popup">✕</span>
+      <h3 id="popupTitle"></h3>
+      <p id="popupText"></p>
+    </div>
+
+    <p class="hero_scrollIndicator">
+      <span>Scroll to Explore</span>
+    </p>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats">
+  <div><h3>1200+</h3><p>Lots Surveyed</p></div>
+  <div><h3>10+</h3><p>Years Experience</p></div>
+  <div><h3>100%</h3><p>DENR Compliant</p></div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section id="about" class="about-section reveal">
+  <div class="about-wrap">
+    <div class="about-text">
+      <small><span class="section-label">About Us</span></small>
+      <h1>Professional Land Surveying Services You Can Trust</h1>
+      
+      <p class="about-text"><b>Mariano Land Surveying & Realty Services</b> is a licensed Geodetic Engineering and Real Estate Surveying firm based in Manaoag, Pangasinan, Philippines. We specialize in providing accurate, reliable, and legally compliant land surveying solutions.</p>
+      
+      <p class="about-text">With years of experience serving residential, commercial, and agricultural clients across Pangasinan, we pride ourselves on delivering professional services with precision and integrity. Our team uses state-of-the-art surveying equipment and follows strict industry standards to ensure every project meets the highest quality requirements.</p>
+      
+      <p class="about-text">We are committed to helping property owners, developers, and businesses with accurate land measurements, legal documentation, and expert consultation for all their surveying needs.</p>
+        
+      <div class="about-stats">
+        <div class="stat-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-award stat-icon" aria-hidden="true">
+            <path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"></path>
+            <circle cx="12" cy="8" r="6"></circle>
+          </svg>
+          <div>
+            <div class="stat-number">Licensed</div>
+            <div class="stat-label">Geodetic Engineer</div>
+          </div>
+        </div>
+
+        <div class="stat-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-target stat-icon" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"></circle>
+            <circle cx="12" cy="12" r="6"></circle>
+            <circle cx="12" cy="12" r="2"></circle>
+          </svg>
+          <div>
+            <div class="stat-number">100%</div>
+            <div class="stat-label">Accuracy Guaranteed</div>
+          </div>
+        </div>
+
+        <div class="stat-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock stat-icon" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polyline points="12 6 12 12 16 14"></polyline>
+          </svg>
+          <div>
+            <div class="stat-number">Fast</div>
+            <div class="stat-label">Turnaround Time</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-image reveal">
+      <img src="image/man.jpg" alt="Surveying Work">
+      <div class="about-image-badge">
+        <div><small><span class="badge-number"><b>5+</b></span></small></div>
+        <span class="badge-text">Years of Excellence</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES SECTION -->
+<section id="services" class="services-section reveal">
+  <div class="section-title">
+    <small><span class="section-label">Our Services</span></small>
+    <h1>Comprehensive Land Surveying Solutions</h1>
+    <p>From inquiry to final delivery, we ensure a smooth and professional experience</p>
+  </div>
+
+  <section class="service-features">
+    <div class="feature-row reveal">
+      <div class="feature-text">
+        <div class="service-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg> 
+        </div>
+        <h3>Relocation Survey</h3>
+        <p>- Accurate boundary relocation and verification of lot corners.</p>
+        <ul>
+          <li><p>• Agricultural zones are shown with green fields and cultivated parcels.</p></li>
+          <li><p>• Residential zones are organized into smaller housing blocks with a clear grid.</p></li>
+          <li><p>• Commercial zones stand out with larger parcels and taller structures.</p></li>
+          <li><p>• Surveying equipment (like a total station) reinforces the geodetic engineer's role in precision mapping.</p></li>
+        </ul>
+      </div>
+      <div class="feature-img">
+        <img src="image/1.png" alt="Relocation Survey">
+      </div>
+    </div>
+
+    <div class="feature-row reverse reveal">
+      <div class="feature-text">
+        <div class="service-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-panels-top-left" aria-hidden="true"><rect width="18" height="18" x="3" y="3" rx="2"></rect><path d="M3 9h18"></path><path d="M9 21V9"></path></svg> 
+        </div>
+        <h3>Subdivision Survey</h3>
+        <p>- Subdivision planning and DENR-compliant technical descriptions.</p>
+        <ul>
+          <li><p>• DENR-compliant technical descriptions like bearings, distances, and lot numbers.</p></li>
+          <li><p>• Subdivision layout with glowing parcel outlines and curved road networks.</p></li>
+          <li><p>• Geodetic engineer operating a total station, reinforcing your role in precision mapping.</p></li>
+          <li><p>• Contour lines and grids emphasize accuracy and technical detail.</p></li>
+        </ul>
+      </div>
+      <div class="feature-img">
+        <img src="image/2.png" alt="Subdivision Survey">
+      </div>
+    </div>
+
+    <div class="feature-row reveal">
+      <div class="feature-text">
+        <div class="service-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mountain" aria-hidden="true"><path d="m8 3 4 8 5-5 5 15H2L8 3z"></path></svg>      
+        </div>
+        <h3>Topographic Survey</h3>
+        <p>- Contour mapping, elevation profiles, and site development plans.</p>
+        <ul>
+          <li><p>• Contour mapping with glowing elevation lines and labeled height points.</p></li>
+          <li><p>• Elevation profile chart embedded in the terrain, showing slope and relief.</p></li>
+          <li><p>• Site development overlays like roads, drainage paths, and building footprints.</p></li>
+          <li><p>• Geodetic engineer operating a total station, reinforcing your role in precision terrain analysis.</p></li>
+        </ul>
+      </div>
+      <div class="feature-img">
+        <img src="image/3.png" alt="Topographic Survey">
+      </div>
+    </div>
+
+    <div class="feature-row reverse reveal">
+      <div class="feature-text">
+        <div class="service-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big" aria-hidden="true"><path d="M21.801 10A10 10 0 1 1 17 3.335"></path><path d="m9 11 3 3L22 4"></path></svg> 
+        </div>
+        <h3>Verification Survey</h3>
+        <p>- Lot verification and relocation prior to titling and construction.</p>
+        <ul>
+          <li><p>• Highlighted lot boundaries with bearings, distances, and relocation markers.</p></li>
+          <li><p>• DENR-compliant annotations for titling and construction readiness.</p></li>
+          <li><p>• Geodetic engineer operating a total station, reinforcing your role in boundary validation.</p></li>
+          <li><p>• Comprehensive survey reports and digital maps, providing clear documentation for stakeholders and future development.</p></li>
+        </ul>
+      </div>
+      <div class="feature-img">
+        <img src="image/4.png" alt="Verification Survey">
+      </div>
+    </div>
+
+    <div class="feature-row reveal">
+      <div class="feature-text">
+        <div class="service-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map" aria-hidden="true"><path d="M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0z"></path><path d="M15 5.764v15"></path><path d="M9 3.236v15"></path></svg>
+        </div>
+        <h3>Land Mapping</h3>
+        <p>- Accurate land mapping for agricultural, residential, and commercial use.</p>
+        <ul>
+          <li><p>• Agricultural zones with green fields and crop patterns.</p></li>
+          <li><p>• Residential blocks laid out in a clean grid.</p></li>
+          <li><p>• Commercial zones with larger parcels and building footprints.</p></li>
+          <li><p>• Surveyor with total station reinforcing your geodetic expertise.</p></li>
+        </ul>
+      </div>
+      <div class="feature-img">
+        <img src="image/5.png" alt="Land Mapping">
+      </div>
+    </div>
+  </section>
+</section>
+
+<!-- WHY CHOOSE US SECTION -->
+<section class="why-wrap">
+  <div class="main-container">
+    <div class="engineer-character left"></div>
+
+    <div class="center-box">
+      <h2>Why Choose Us</h2>
+      <ul>
+        <li>✓ Licensed Geodetic Engineer</li>
+        <li>✓ Accurate Survey Instruments</li>
+        <li>✓ Fast Processing</li>
+        <li>✓ Reliable Results</li>
+        <li>✓ Client-Focused Service</li>
+      </ul>
+    </div>
+
+    <div class="engineer-wrapper">
+      <div class="engineer-character right"></div>
+    </div>
+  </div>
+
+  <!-- ENGINEER INFO BANNER -->
+  <div class="engineer-banner">
+    <div class="engineer-card">
+      <div class="engineer-image-wrapper">
+        <img src="image/engr.jpg" alt="Engr. Reinard B. Mariano" class="engineer-portrait">
+      </div>
+      <div class="engineer-details">
+        <h3><span class="rotating-title">Engineer</span> Reinard B. Mariano</h3>
+        <p class="engineer-title">Licensed Geodetic Professional</p>
+        <p class="engineer-bio">With 10+ years of experience in land surveying and geodetic engineering, delivering precision and excellence.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOGIN MODAL - MAKE VISIBLE -->
+<div class="login-modal active" id="loginModal">
+  <div class="login-overlay" id="loginOverlay"></div>
+  <div class="login-container">
+    <div class="login-header">
+      <h2>Sign In</h2>
+      <button class="login-close" id="loginClose">&times;</button>
+    </div>
+
+    <div class="login-tabs">
+      <button class="tab-btn active" data-tab="user">User Login</button>
+      <button class="tab-btn" data-tab="admin">Admin Portal</button>
+    </div>
+    
+    <!-- USER PROFILE MODAL - ADD THIS AFTER LOGIN MODAL -->
+<div class="user-profile-modal" id="userProfileModal">
+  <div class="modal-overlay"></div>
+  <div class="modal-content profile-content">
+    <div class="profile-header">
+      <h2>👤 User Profile</h2>
+      <button class="modal-close" id="profileCloseBtn">&times;</button>
+    </div>
+
+    <div class="profile-body">
+      <div class="profile-info">
+        <div class="info-item">
+          <label>Username</label>
+          <p id="profileUserName">-</p>
+        </div>
+        
+        <div class="info-item">
+          <label>Phone Number</label>
+          <p id="profileUserPhone">-</p>
+        </div>
+        
+        <div class="info-item">
+          <label>Login Type</label>
+          <p id="profileLoginType">-</p>
+        </div>
+        
+        <div class="info-item">
+          <label>Login Date</label>
+          <p id="profileLoginDate">-</p>
+        </div>
+      </div>
+
+      <div class="profile-actions">
+        <button class="btn-logout" id="logoutFromProfileBtn">🚪 Logout</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- USER LOGIN TAB -->
+    <div class="tab-content active" id="user-tab">
+      <div class="login-method">
+        <button class="btn-google" id="googleLoginBtn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+            <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+            <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+            <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+          </svg>
+          Sign in with Google
+        </button>
+
+        <div class="login-divider">or</div>
+
+        <div class="phone-auth">
+          <input type="tel" id="phoneNumber" placeholder="+63 XXX XXX XXXX" class="input-field">
+          <button class="btn-send-otp" id="sendOtpBtn">Send OTP</button>
+        </div>
+
+        <div class="otp-section" id="otpSection" style="display: none;">
+          <input type="text" id="otpCode" placeholder="Enter 6-digit OTP" class="input-field" maxlength="6">
+          <button class="btn-verify-otp" id="verifyOtpBtn">Verify OTP</button>
+          <button class="btn-resend-otp" id="resendOtpBtn">Resend OTP</button>
+        </div>
+
+        <div id="recaptcha-container"></div>
+      </div>
+    </div>
+
+    <!-- ADMIN LOGIN TAB -->
+    <div class="tab-content" id="admin-tab">
+      <div class="admin-login">
+        <input type="email" id="adminEmail" placeholder="Admin Email" class="input-field">
+        <input type="password" id="adminPassword" placeholder="Admin Password" class="input-field">
+        <button class="btn-admin-login" id="adminLoginBtn">Admin Login</button>
+        <p class="admin-note">Only administrators can access the admin portal</p>
+      </div>
+    </div>
+
+    <p class="login-note">You can browse the website freely. Login is only required to request a survey or make inquiries.</p>
+  </div>
+</div>
+
+<!-- PROCESS SECTION -->
+<section id="process" class="process-section reveal">
+  <div class="process-header">
+    <small><span class="section-label">Our Process</span></small>
+    <h1>Simple & Efficient Workflow</h1>
+    <p>From inquiry to final delivery, we ensure a smooth and professional experience</p>
+  </div>
+
+  <div class="process-wrapper">
+    <div class="process-steps">
+      <button class="step active" data-step="1">01</button>
+      <button class="step" data-step="2">02</button>
+      <button class="step" data-step="3">03</button>
+      <button class="step" data-step="4">04</button>
+      <button class="step" data-step="5">05</button>
+    </div>
+
+    <div class="process-content">
+      <div class="content active" data-step="1">
+        <h3>Inquiry</h3>
+        <p>You contact us with your project requirements, timeline, and expectations.</p>
+        <div class="process-image-holder">
+          <img src="image/inquire.png" alt="Inquiry Process" class="process-img">
+        </div>
+      </div>
+      <div class="content" data-step="2">
+        <h3>Site Inspection</h3>
+        <p>We visit the location to assess conditions, scope, and technical needs.</p>
+        <div class="process-image-holder">
+          <img src="image/inspection.png" alt="Site Inspection" class="process-img">
+        </div>
+      </div>
+      <div class="content" data-step="3">
+        <h3>Survey & Mapping</h3>
+        <p>Accurate measurements and mapping using professional surveying tools.</p>
+        <div class="process-image-holder">
+          <img src="image/survey and mapping.png" alt="Survey & Mapping" class="process-img">
+        </div>
+      </div>
+      <div class="content" data-step="4">
+        <h3>Documentation</h3>
+        <p>Preparation of reports, plans, and legal-ready documents.</p>
+        <div class="process-image-holder">
+          <img src="image/documentation.png" alt="Documentation" class="process-img">
+        </div>
+      </div>
+      <div class="content" data-step="5">
+        <h3>Final Output</h3>
+        <p>We deliver polished, accurate, and ready-to-use final outputs.</p>
+        <div class="process-image-holder">
+          <img src="image/final.png" alt="Final Output" class="process-img">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="contact-section reveal">
+  <small><span class="section-label">Contact Us</span></small>
+  <h1>Let's Talk About Your Land</h1>
+  <p class="section-sub">Get a free consultation with our licensed surveying experts.</p>
+
+  <div class="contact-wrapper">
+    <div class="contact-card map-card">
+      <iframe src="https://www.google.com/maps/embed?pb=!4v1769157364978!6m8!1m7!1sCdNbaV0XHV2mPE979HypAA!2m2!1d16.0439389651272!2d120.4855083974252!3f325.35072528248327!4f-5.870881312447224!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="contact-card info-card">
+      <div class="contact-info">
+        <p><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin interactive-svg" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg> 
+           <strong>Address</strong><br>Soriano St, Manaoag, Pangasinan</p>
+
+        <p><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 23 23" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone interactive-svg" aria-hidden="true">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67 A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6 l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7 A2 2 0 0 1 22 16.92z"></path></svg>
+          <strong>Phone</strong><br>
+          <a href="tel:+639272104446">+63 927 210 4446</a></p>
+
+        <p><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock stat-icon interactive-svg" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline></svg>
+         <strong>Hours</strong><br>Mon – Sat · 8:00 AM – 5:00 PM</p>
+      </div>
+
+      <form class="contact-form" id="contactForm">
+        <div class="field">
+          <input type="text" required>
+          <label>Full Name</label>
+        </div>
+
+        <div class="field">
+          <input type="email" required>
+          <label>Email Address</label>
+        </div>
+
+        <div class="field">
+          <input type="tel" required>
+          <label>Phone Number</label>
+        </div>
+
+        <div class="field">
+          <textarea rows="4"></textarea>
+          <label>Your Message</label>
+        </div>
+
+        <button type="submit">Send Inquiry</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <p>© 2026 MARIANO LAND SURVEYING & REALTY SERVICES — All Rights Reserved.</p>
+</footer>
+
+<!-- FLOATING CALL BUTTON (Mobile) -->
+<a href="tel:+639272104446" class="mobile-call-btn">
+  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone" aria-hidden="true">
+    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67 A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6 l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7 A2 2 0 0 1 22 16.92z"></path>
+  </svg>
+  Call Now
+</a>
+
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="NEW.js" defer></script>
+
+</body>
+</html>

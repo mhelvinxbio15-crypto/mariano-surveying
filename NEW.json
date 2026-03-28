@@ -1,0 +1,57 @@
+{
+  "name": "Mariano Land Surveying & Realty Services",
+  "short_name": "Mariano Surveys",
+  "description": "Professional land surveying services in Pangasinan",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#ffffff",
+  "theme_color": "#0056d2",
+  "icons": [
+    {
+      "src": "image/NEWLOGO.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "image/NEWLOGO.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "image/NEWLOGO.png",
+      "sizes": "maskable",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Request a Survey",
+      "short_name": "Survey",
+      "description": "Request a land surveying service",
+      "url": "/?shortcut=request-survey",
+      "icons": [
+        {
+          "src": "image/NEWLOGO.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Call Us",
+      "short_name": "Call",
+      "description": "Call our office",
+      "url": "tel:+639272104446",
+      "icons": [
+        {
+          "src": "image/NEWLOGO.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ]
+}

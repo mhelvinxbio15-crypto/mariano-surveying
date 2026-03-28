@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0056d2">
+  <title>Admin Dashboard - Mariano Land Surveying</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="admin-dashboard.css">
+</head>
+<body>
+
+<!-- ADMIN HEADER -->
+<header class="admin-header">
+  <div class="admin-header-content">
+    <div class="admin-logo">
+      <h1>⚙️ Admin Dashboard</h1>
+      <span>Mariano Land Surveying</span>
+    </div>
+    <div class="admin-nav">
+      <button class="nav-btn active" data-page="overview">Dashboard</button>
+      <button class="nav-btn" data-page="inquiries">Inquiries</button>
+      <button class="nav-btn" data-page="users">Users</button>
+      <button class="nav-btn" data-page="settings">Settings</button>
+    </div>
+    <div class="admin-user">
+      <span id="adminName">Admin</span>
+      <button id="adminLogoutBtn" class="btn-logout">Logout</button>
+    </div>
+  </div>
+</header>
+
+<!-- MAIN CONTENT -->
+<main class="admin-main">
+
+  <!-- DASHBOARD OVERVIEW -->
+  <section class="page-section active" id="overview">
+    <h2>Dashboard Overview</h2>
+    
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-icon">👥</div>
+        <div class="stat-content">
+          <h3>Total Users</h3>
+          <p class="stat-number" id="totalUsers">0</p>
+        </div>
+      </div>
+      
+      <div class="stat-card">
+        <div class="stat-icon">📋</div>
+        <div class="stat-content">
+          <h3>Total Inquiries</h3>
+          <p class="stat-number" id="totalInquiries">0</p>
+        </div>
+      </div>
+      
+      <div class="stat-card">
+        <div class="stat-icon">✅</div>
+        <div class="stat-content">
+          <h3>Completed</h3>
+          <p class="stat-number" id="completedInquiries">0</p>
+        </div>
+      </div>
+      
+      <div class="stat-card">
+        <div class="stat-icon">⏳</div>
+        <div class="stat-content">
+          <h3>Pending</h3>
+          <p class="stat-number" id="pendingInquiries">0</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="charts-grid">
+      <div class="chart-card">
+        <h3>Recent Inquiries</h3>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Phone</th>
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="recentInquiriesTable">
+            <tr>
+              <td colspan="5" style="text-align: center; padding: 20px;">No data yet</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- INQUIRIES PAGE -->
+  <section class="page-section" id="inquiries">
+    <div class="section-header">
+      <h2>Manage Inquiries</h2>
+      <input type="text" id="inquirySearch" placeholder="Search inquiries..." class="search-box">
+    </div>
+    
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Phone</th>
+          <th>Message</th>
+          <th>Date</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="inquiriesTable">
+        <tr>
+          <td colspan="8" style="text-align: center; padding: 20px;">No inquiries yet</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- USERS PAGE -->
+  <section class="page-section" id="users">
+    <div class="section-header">
+      <h2>Manage Users</h2>
+      <input type="text" id="userSearch" placeholder="Search users..." class="search-box">
+    </div>
+    
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Phone</th>
+          <th>Email</th>
+          <th>Login Type</th>
+          <th>Join Date</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="usersTable">
+        <tr>
+          <td colspan="8" style="text-align: center; padding: 20px;">No users yet</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- SETTINGS PAGE -->
+  <section class="page-section" id="settings">
+    <h2>Settings & Configuration</h2>
+    
+    <div class="settings-card">
+      <h3>Website Settings</h3>
+      <div class="setting-item">
+        <label>Business Name</label>
+        <input type="text" id="businessName" value="Mariano Land Surveying & Realty Services" class="setting-input">
+      </div>
+      <div class="setting-item">
+        <label>Phone Number</label>
+        <input type="tel" id="businessPhone" value="+639272104446" class="setting-input">
+      </div>
+      <div class="setting-item">
+        <label>Email Address</label>
+        <input type="email" id="businessEmail" value="contact@mariano.com" class="setting-input">
+      </div>
+      <button class="btn-primary" id="saveSettingsBtn">Save Settings</button>
+    </div>
+
+    <div class="settings-card">
+      <h3>Database Export</h3>
+      <p>Export all data to CSV for backup or analysis</p>
+      <div class="button-group">
+        <button class="btn-secondary" id="exportUsersBtn">Export Users</button>
+        <button class="btn-secondary" id="exportInquiriesBtn">Export Inquiries</button>
+        <button class="btn-secondary" id="exportAllBtn">Export All Data</button>
+      </div>
+    </div>
+
+    <div class="settings-card">
+      <h3>Admin Account</h3>
+      <div class="setting-item">
+        <label>Admin Email</label>
+        <input type="email" id="adminEmail" value="admin@mariano.com" class="setting-input" disabled>
+      </div>
+      <button class="btn-warning">Change Password</button>
+    </div>
+  </section>
+
+</main>
+
+<!-- Modal for editing inquiry -->
+<div class="modal" id="inquiryModal">
+  <div class="modal-content">
+    <span class="modal-close">&times;</span>
+    <h3>Inquiry Details</h3>
+    <div class="modal-body">
+      <p><strong>Name:</strong> <span id="modalName"></span></p>
+      <p><strong>Email:</strong> <span id="modalEmail"></span></p>
+      <p><strong>Phone:</strong> <span id="modalPhone"></span></p>
+      <p><strong>Message:</strong> <span id="modalMessage"></span></p>
+      <p><strong>Status:</strong>
+        <select id="modalStatus">
+          <option value="pending">Pending</option>
+          <option value="in-progress">In Progress</option>
+          <option value="completed">Completed</option>
+        </select>
+      </p>
+    </div>
+    <button class="btn-primary" id="saveInquiryBtn">Save Changes</button>
+  </div>
+</div>
+
+<script src="admin-dashboard.js"></script>
+</body>
+</html>
